@@ -4,7 +4,7 @@ import {BsGithub} from "react-icons/bs";
 import {BsLinkedin} from "react-icons/bs";
 import {BsFillXCircleFill} from "react-icons/bs";
 
-const ContactsButton = ({}) => {
+const ContactsButton = ( a = {} ) => {
     const emailRef = useRef(null);
     const textRef = useRef(null);
     const [visible,setVisibility] = useState(false);
@@ -24,7 +24,7 @@ const ContactsButton = ({}) => {
         setCopySuccess("")
     }
     return (
-        <><li className="navbar-item"><a id="contact-button" href="#/" onClick={() => setVisibility(true)}>Contact Me</a></li>
+        <><li className="navbar-item"><button id="contact-button" onClick={() => setVisibility(true)}>Contact Me</button></li>
         <textarea
             ref={textRef}
             style={{ opacity: 0, position: "absolute", top: "-200px" }}>

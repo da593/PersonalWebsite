@@ -6,7 +6,7 @@ import profilePic from "../images/profilePic.jpg";
 const ProfilePic = () => {
 return (
     <div className="profilePicContainer">
-        <img className="profilePic" src={profilePic}/>
+        <img className="profilePic" src={profilePic} alt="e"/>
     </div>
     );
 }

@@ -59,12 +59,8 @@
 
 .name {
     font-size: 18.667px;
-    
+    font-weight:700;
+    line-height:0%;
+    padding-left:10px;
 }
 
-.name:hover {
-    border-radius: 0px;
-    background-color:white;
-    padding: 5px 5px;
-    cursor:default;
-}

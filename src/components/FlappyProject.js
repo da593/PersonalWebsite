@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Picture from "../images/BinaryWebsite.jpg";
+import Picture from "../images/FlappyProject.jpg";
 import {BsFillXCircleFill} from "react-icons/bs";
 
 
@@ -17,8 +17,8 @@ function BDOProject() {
             </div>
 
             <div className="project-card-overlay">
-                <p className="project-card-company">McCabe-Thiele</p>
-                <p className="project-card-title">Binary Distillation Solver</p>
+                <p className="project-card-company">Drexel University</p>
+                <p className="project-card-title">FlappyBlock</p>
             </div>
         </div>
         <div className="popup-containers" style={{ display: visible ? 'flex' : 'none' }}>
@@ -29,27 +29,21 @@ function BDOProject() {
                     </div>
 
                     <div className="project-card-overlay-popup">
-                        <p className="project-card-company-popup">McCabe-Thiele</p>
-                        <p className="project-card-title-popup">Binary Distillation Solver</p>
+                        <p className="project-card-company-popup">Drexel University</p>
+                        <p className="project-card-title-popup">FlappyBlock</p>
                         <p className="project-card-description-popup">
-                            This website quickly performs the McCabe-Thiele graphical method to determine the number of stages required for a binary distillation solver. 
-                            With built-in validation, users will always get their answer and are guided with tooltips and notifications to help solve their problem.
+                        A group of 3 freshman in an engineering course bring you the FlappyBlock edition built with MATLAB! 
+                        The game features event key actions, score tracker, and high score tracker for multiple played sessions. 
+                        By leading this team, we finished this project ahead of the 10 week schedule.
+                        
                         </p>
-                        <a href="https://da593.github.io/ReactBinary/" target="_blank" rel="noopener noreferrer" className="project-link">Link to site</a>
+                        <a href="https://github.com/da593/FlappyBlock" target="_blank" rel="noopener noreferrer" className="project-link">Link to code on GitHub</a>
                     </div>
                     <div className="project-card-skills-popup">
                         <div className="skill">
-                            JavaScript 
+                            MATLAB 
                         </div>
-                        <div className="skill">
-                            React 
-                        </div>
-                        <div className="skill">
-                             HTML
-                        </div>   
-                        <div className="skill">
-                            CSS 
-                        </div>                   
+                                         
                     </div>
             </div>
         </div>

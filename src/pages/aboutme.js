@@ -3,13 +3,17 @@ import React from "react";
 function About() {
     return (
     <div className="content-wrapper">
-      <h1 className="title is-1">This is the Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida,
-        risus at dapibus aliquet, elit quam scelerisque tortor, nec accumsan eros
-        nulla interdum justo. Pellentesque dignissim, sapien et congue rutrum,
-        lorem tortor dapibus turpis, sit amet vestibulum eros mi et odio.
-      </p>
+      <div  id="introduction-about">
+        <h1 className="section-header">
+          Introduction
+        </h1>
+        <p className="introduction-description">
+        I’ve developed features for millions of users on the Fordpass iOS team, worked on mission planning tools for another planet at NASA, and am currently building Ford’s machine learning platform.
+        </p>
+      </div>
+      <div className="skills-section">
+        <h1 className="section-header">Skills</h1>
+      </div>
     </div>
       
     );

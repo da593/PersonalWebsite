@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Picture from "../images/BinaryWebsite.jpg";
+import Picture from "../images/PortfolioWebsite.jpg";
 import {BsFillXCircleFill} from "react-icons/bs";
 
 
@@ -17,8 +17,8 @@ function BDOProject() {
             </div>
 
             <div className="project-card-overlay">
-                <p className="project-card-company">McCabe-Thiele</p>
-                <p className="project-card-title">Binary Distillation Solver</p>
+                <p className="project-card-company">Dylan Au</p>
+                <p className="project-card-title">Personal Portfolio</p>
             </div>
         </div>
         <div className="popup-containers" style={{ display: visible ? 'flex' : 'none' }}>
@@ -29,13 +29,14 @@ function BDOProject() {
                     </div>
 
                     <div className="project-card-overlay-popup">
-                        <p className="project-card-company-popup">McCabe-Thiele</p>
-                        <p className="project-card-title-popup">Binary Distillation Solver</p>
+                        <p className="project-card-company-popup">Dylan Au</p>
+                        <p className="project-card-title-popup">Personal Portfolio</p>
                         <p className="project-card-description-popup">
-                            This website quickly performs the McCabe-Thiele graphical method to determine the number of stages required for a binary distillation solver. 
-                            With built-in validation, users will always get their answer and are guided with tooltips and notifications to help solve their problem.
+                            This website demonstrates everything about me! 
+                            It showcases the skills I have developed and the projects that I have worked on and I am proud to share with you.
                         </p>
-                        <a href="https://da593.github.io/ReactBinary/" target="_blank" rel="noopener noreferrer" className="project-link">Link to site</a>
+                        <a href="https://da593.github.io/PersonalWebsite/" target="_blank" rel="noopener noreferrer" className="project-link">Link to site</a>
+                        <span id="clever-text"><br/>(but you are already here)</span>
                     </div>
                     <div className="project-card-skills-popup">
                         <div className="skill">
