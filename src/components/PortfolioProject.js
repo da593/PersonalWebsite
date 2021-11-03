@@ -8,6 +8,8 @@ function BDOProject() {
     const closePopup = () => {
         setVisibility(false)
     }
+
+
     return (
     <>
         <div className="project-card" onClick={() => setVisibility(true)}>
