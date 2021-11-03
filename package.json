@@ -1,5 +1,6 @@
 {
-  "name": "personalwebsite",
+  "homepage": "https://da593.github.io/PersonalWebsite/",
+  "name": "code",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
