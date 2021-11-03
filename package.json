@@ -1,6 +1,6 @@
 {
   "homepage": "https://da593.github.io/PersonalWebsite/",
-  "name": "code",
+  "name": "personalWebsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
