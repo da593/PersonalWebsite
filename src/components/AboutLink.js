@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const AboutLink = () => {
 return (
     <li className="navbar-item">
-        <NavLink exact to="/PersonalWebsite/about" activeClassName="current-page">About Me</NavLink>
+        <NavLink exact to="/about" activeClassName="current-page">About Me</NavLink>
     </li>
 
     
