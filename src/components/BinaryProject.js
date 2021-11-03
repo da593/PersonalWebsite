@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Picture from "../images/BinaryWebsite.jpg";
+import Picture from "../images/binaryWebsite.jpg";
 import {BsFillXCircleFill} from "react-icons/bs";
 
 
