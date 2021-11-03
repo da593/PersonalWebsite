@@ -32,7 +32,7 @@ function BDOProject() {
                         <p className="project-card-company-popup">Drexel University</p>
                         <p className="project-card-title-popup">FlappyBlock</p>
                         <p className="project-card-description-popup">
-                        A group of 3 freshman in an engineering course bring you the FlappyBlock edition built with MATLAB! 
+                        A group of 3 freshman in an engineering course bring you FlappyBlock! 
                         The game features event key actions, score tracker, and high score tracker for multiple played sessions. 
                         By leading this team, we finished this project ahead of the 10 week schedule.
                         

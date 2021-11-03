@@ -12,7 +12,9 @@ function Projects() {
           Hey, I'm Dylan Au <br/>An Aspiring Software Engineer
         </h1>
         <p className="project-introduction">
-        I’ve developed features for millions of users on the Fordpass iOS team, worked on mission planning tools for another planet at NASA, and am currently building Ford’s machine learning platform.
+        I've developed two websites for gamers and chemical engineer students that quickly solves a popular problem,
+        worked on a prediction model with Drexel University's Chemical Engineer Department,
+        and I am currently planning my next application.
         </p>
         <a href='../images/Resume-DylanAu.pdf' download className="download-link">Download Resume (PDF)</a>
       </div>

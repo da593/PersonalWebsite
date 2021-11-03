@@ -18,8 +18,8 @@ ReactDOM.render(
     <BrowserRouter>
       <TopBar/>
         <Switch>
-            <Route exact path='/'><Projects/></Route> 
-            <Route exact path='/about'><About/></Route>
+            <Route exact path='/PersonalWebsite'><Projects/></Route> 
+            <Route exact path='/PersonalWebsite/about'><About/></Route>
         </Switch>
     </BrowserRouter>
     

@@ -93,10 +93,11 @@ a:visited {
 .content-wrapper {
   margin-left:22%;
   margin-right:22%;
+  margin-bottom:2%;
 }
 
 .introduction-section {
-  margin-top:20%;
+  margin-top:15%;
   margin-right:45%;
   margin-bottom:15%;
 }
@@ -270,19 +271,123 @@ p {
   font-weight:600;
 }
 
-.section-header {
-  font-family:'Oswald','sans-serif';
-  text-align:center;
-  margin:0;
+.section-wrapper{
+  display:inline-block;
+  border-bottom-style:solid;
+  border-bottom-width:1px !important ; 
+  border-top-color:black;
+  padding:10px 0px;
+  width:100%;
 }
 
-#introduction-about {
-  margin-top:10%;
+.section {
+  margin-left:15%;
+  margin-right:15%;
+}
+.section-header {
+  font-family:"Helvetica","sans-serif";
+  margin:0;
+  text-align:center;
+  margin-bottom:2%;
 }
 
 .introduction-description {
-  font-family:'Open Sans',sans-serif;
+  font-family:"Helvetica","sans-serif";
   font-size:1.2em;
+  text-align:left;
   
+}
+
+
+.list-header {
+  float:left;
+  width:50%;
   text-align:center;
+  margin:0;
+}
+.skills-list{
+  float:left;
+  vertical-align:top;
+  width:45%;
+}
+
+.skills-list > li, .job-list >li {
+  font-size:1.2em;
+  font-weight:300;
+  font-family:"Helvetica","sans-serif";
+}
+
+.job-description {
+  margin-left:15%;
+  margin-right:15%;
+}
+
+h3 {
+  margin:0
+}
+
+.work-period {
+ float:right;
+}
+
+.job-list >li,.other-list>li {
+  font-size:18px;
+  font-weight:300;
+  font-family:"Helvetica","sans-serif";
+}
+
+
+.other-list {
+  margin-left:20%;
+  margin-right:20%;
+  
+}
+
+.TableOfContents {
+  position: fixed;
+  z-index:1;
+  margin-left:0%;
+  margin-top:10%;
+  max-height: calc(100vh - 40px);
+  overflow:auto;
+  background-color:#1F2233;
+  border-radius:50px;
+  width:10%;
+}
+.TableOfContents > ul {
+  color:white;
+}
+.TableOfContents > ul > li > a {
+  color:white;
+  font-size:12px;
+  font-family:"Helvetica"
+}
+
+.TableOfContents > ul > li.active > a {
+  color: yellow;
+}
+
+.TableOfContents > ul > li > a:hover {
+  background-color:#1F2233;
+  border-radius:0px;
+  color:yellow;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+}
+
+
+html,h1 {
+  scroll-margin-top:75px;
+}
+
+/* Safari-only */
+@supports (-webkit-hyphens:none) {
+  .section-wrapper {
+      padding-top: 75px;
+      margin-top:  75px;
+  }
 }
