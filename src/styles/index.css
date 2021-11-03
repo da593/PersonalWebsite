@@ -351,16 +351,19 @@ h3 {
   max-height: calc(100vh - 40px);
   overflow:auto;
   background-color:#1F2233;
-  border-radius:50px;
-  width:10%;
+  
+  width:7%;
 }
 .TableOfContents > ul {
   color:white;
+  padding-left:20px;
+  
 }
 .TableOfContents > ul > li > a {
   color:white;
   font-size:12px;
-  font-family:"Helvetica"
+  font-family:"Helvetica";
+  
 }
 
 .TableOfContents > ul > li.active > a {
@@ -371,6 +374,7 @@ h3 {
   background-color:#1F2233;
   border-radius:0px;
   color:yellow;
+  
 }
 
 @media screen and (max-width: 900px) {
