@@ -1,5 +1,5 @@
 import React from "react";
-
+import Resume from '../images/Resume-DylanAu.pdf';
 
 function About() {
 /**
@@ -85,7 +85,7 @@ const TableOfContents = () => {
             This has led me to take a majority of the software engineer minor curriculum.
             With this knowledge, I developed various websites and helped my chemical engineer department build a Python script which are outlined below!
           </p>
-          <a href='../images/Resume-DylanAu.pdf' download className="download-link">Download Resume (PDF)</a>
+          <a href={Resume} target="_blank" className="download-link" download="Resume-DylanAu.pdf" >Download Resume (PDF)</a>
         </div>
       </div>
 

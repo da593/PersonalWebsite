@@ -3,7 +3,7 @@ import BDOProject from "../components/BDOProject";
 import BinaryProject from "../components/BinaryProject";
 import PortfolioProject from "../components/PortfolioProject";
 import FlappyProject from "../components/FlappyProject";
-
+import Resume from '../images/Resume-DylanAu.pdf';
 function Projects() {
     return (
     <div className="content-wrapper">
@@ -16,7 +16,7 @@ function Projects() {
         worked on a prediction model with Drexel University's Chemical Engineer Department,
         and I am currently planning my next application.
         </p>
-        <a href='../images/Resume-DylanAu.pdf' download className="download-link">Download Resume (PDF)</a>
+        <a href={Resume} target="_blank" className="download-link" download="Resume-DylanAu.pdf" >Download Resume (PDF)</a>
       </div>
       <div className="projects-section">
           <h2 id="project-header">Featured Work</h2>
