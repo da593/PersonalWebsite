@@ -36,7 +36,7 @@ function BDOProject() {
                             It also tracks the history of sales for all microtransactions 
                             that is listed on a centralized marketplace to help players determine what players are buying with real money and selling on the ingame market. 
                         </p>
-                        <a href="https://da593.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" className="project-link">Link to site</a>
+                        <a href="https://da593.pythonanywhere.com/" target="_blank" rel="noreferrer" className="project-link">Link to site</a>
                     </div>
                     <div className="project-card-skills-popup">
                         <div className="skill">

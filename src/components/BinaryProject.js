@@ -35,7 +35,7 @@ function BDOProject() {
                             This website quickly performs the McCabe-Thiele graphical method to determine the number of stages required for a binary distillation solver. 
                             With built-in validation, users will always get their answer and are guided with tooltips and notifications to help solve their problem.
                         </p>
-                        <a href="https://da593.github.io/ReactBinary/" target="_blank" rel="noopener noreferrer" className="project-link">Link to site</a>
+                        <a href="https://da593.github.io/ReactBinary/" target="_blank" rel="noreferrer" className="project-link">Link to site</a>
                     </div>
                     <div className="project-card-skills-popup">
                         <div className="skill">
