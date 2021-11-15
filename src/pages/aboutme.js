@@ -115,18 +115,18 @@ const TableOfContents = () => {
           <h3>Drexel University <span className="work-period">January 2020 - May 2021</span></h3>
           <h3>Script Developer</h3>
           <ul className="job-list">
-            <li>Developed a stock-driven solar photovoltaics dynamic material flow assessment in Python</li>
-            <li>Created unit tests via pytest in order to assure the model’s assumptions are held as more parameters were added</li>
-            <li>Wrote a supporting information document to help users understand and re-use the model for their own study</li>
+            <li>Implemented a stock-driven dynamic material flow assessment to predict future waste production from solar panels</li>
+            <li>Created unit tests cases to test and debug the complex algorithm to ensure it meets the model’s requirements</li>
+            <li> Wrote a supporting information document tailored to a non-technical audience or researchers, guiding them on the 
+            algorithm and how to run the model in Juypter Notebook.</li>
           </ul>
           </div>
           <div className="job-description">
           <h3>Philadelphia Water Department<span className="work-period">October 2018 - March 2019</span></h3>
           <h3>Laboratory Assistant Co-op</h3>
           <ul className="job-list">
-            <li>Performed routine tests of water samples including suspended solids, biochemical oxygen demand, and pH</li>
-            <li>Prepared standard solutions to determine phosphorus and chlorine concentration of water samples</li>
-            <li>Helped manage chain of custody sheets for industrial waste coming into the plant</li>
+            <li>Communicated and collaborated effectively with lab technicians to complete timely tasks with limited equipment.</li>
+            <li>Took ownership of chain of custody sheets for industrial waste test samples entering the plant. </li>
           </ul>
           </div>
         </div>
@@ -140,7 +140,8 @@ const TableOfContents = () => {
           <h3>Web Developer (Django, HTML, CSS JavaScript, MySQL) </h3>
           <ul className="job-list">
             <li>Built a website to help users optimize their daily income by tracking the most profitable items for various activities</li>
-            <li>Utilize Fetch API to GET updated values from a local database and to dynamically update the table values</li>
+            <li> Provided users updated item information by producing a scheduled python script that updates the database every 16 
+              minutes from a POST API request</li>
           </ul>
           </div>
           <div className="job-description">
@@ -155,8 +156,9 @@ const TableOfContents = () => {
           <h3>Interactive Calculator<span className="work-period">February 2021 – February 2021</span></h3>
           <h3>Software Engineer (Java)</h3>
           <ul className="job-list">
-            <li>Developed a calculator with a GUI using Java AWT package</li>
-            <li>Utilized a server to calculate the mathematical expression inputted and is sent to the calculator client to be displayed</li>
+            <li>Designed and implemented an interactive calculator with a GUI using Java AWT package</li>
+            <li>Utilized a client-server model, visitor pattern, state pattern, and model-view-controller architecture to optimize 
+                performance, manageability, and quality of the code</li>
           </ul>
           </div>
           <div className="job-description">
