@@ -37,7 +37,7 @@ function BDOProject() {
                             This website demonstrates everything about me! 
                             It showcases the skills I have developed and the projects that I have worked on and I am proud to share with you.
                         </p>
-                        <a href="https://dylanau.netlify.app" target="_blank" rel="noreferrer" className="project-link">Link to site</a>
+                        <a href="https://dylanau.netlify.app" target="_blank" rel="noopener noreferrer" className="project-link">Link to site</a>
                         <span id="clever-text"><br/>(but you are already here)</span>
                     </div>
                     <div className="project-card-skills-popup">

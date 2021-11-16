@@ -85,7 +85,7 @@ const TableOfContents = () => {
             This has led me to take a majority of the software engineer minor curriculum.
             With this knowledge, I developed various websites and helped my chemical engineer department build a Python script which are outlined below!
           </p>
-          <a href={Resume} target="_blank" className="download-link" download="Resume-DylanAu.pdf" >Download Resume (PDF)</a>
+          <a href={Resume} target="_blank" rel="noopener noreferrer" className="download-link" download="Resume-DylanAu.pdf" >Download Resume (PDF)</a>
         </div>
       </div>
 
