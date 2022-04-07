@@ -27,12 +27,8 @@
 }
 
 .navbar-list {
-    float:left;
-    list-style-type: none;
-    padding-inline-start:0px;
-    margin: 0;
-    margin-top:18px;
-    
+    display:flex;
+    align-items: center;
 }
 
 .navbar-item {
@@ -65,4 +61,16 @@
 
 .spacer {
     height:66.3125px;
+}
+
+.toggle-light-mode {
+    display:flex;
+}
+
+/*Change style of icons used in toggle button*/
+.icon {
+    font-size:20px;
+    color:rgb(var(--lightBackgroundColor));
+    margin-left:5px;
+    margin-right:5px;
 }

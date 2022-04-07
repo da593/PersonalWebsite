@@ -1,9 +1,10 @@
 import React from "react";
-import BDOProject from "../components/BDOProject";
-import BinaryProject from "../components/BinaryProject";
-import PortfolioProject from "../components/PortfolioProject";
-import FlappyProject from "../components/FlappyProject";
+import BDOProject from "../components/projects/BDOProject";
+import BinaryProject from "../components/projects/BinaryProject";
+import PortfolioProject from "../components/projects/PortfolioProject";
+import FlappyProject from "../components/projects/FlappyProject";
 import Resume from '../images/Resume-DylanAu.pdf';
+
 function Projects() {
     return (
     <div className="content-wrapper">
