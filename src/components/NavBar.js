@@ -4,7 +4,6 @@ import Name from './Name';
 import ProjectLink from './ProjectsLink';
 import AboutLink from './AboutLink';
 import ContactsButton from './ContactsButton';
-import ToggleDarkMode from "./CustomLightModeButton/ToggleDarkMode";
 
 const NavBar = () => {
 return (
@@ -21,7 +20,6 @@ return (
                 <ProjectLink/>
                 <AboutLink/>
                 <ContactsButton/>
-                <ToggleDarkMode/>
             </ul>
         </div>
     </div>
