@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Picture from "../../images/FlappyProject.jpg";
 import ProjectCard from "./ProjectCard";
 
