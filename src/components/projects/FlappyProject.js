@@ -1,13 +1,9 @@
 import React, {useState} from "react";
 import Picture from "../../images/FlappyProject.jpg";
-import {BsFillXCircleFill} from "react-icons/bs";
 import ProjectCard from "./ProjectCard";
 
 function FlappyProject() {
-    const [visible,setVisibility] = useState(false);
-    const closePopup = () => {
-        setVisibility(false)
-    }
+
     const FlappyProps = {
         company: "Drexel University",
         title: "FlappyBlock",

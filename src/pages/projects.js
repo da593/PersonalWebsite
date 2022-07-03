@@ -28,7 +28,7 @@ function Projects() {
               <BDOProject/>
             </div>
             <div>
-       7/       <BinaryProject/>
+              <BinaryProject/>
             </div>
             <div>
               <PortfolioProject/>
