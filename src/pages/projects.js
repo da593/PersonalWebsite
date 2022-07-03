@@ -10,12 +10,14 @@ function Projects() {
     <div className="content-wrapper">
       <div className="introduction-section">
         <h1>
-          Hey, I'm Dylan Au <br/>An Aspiring Software Engineer
+          Hey, I'm Dylan Au <br/>A Software Engineer from Philly
         </h1>
-        <p className="project-introduction">
-        I've developed two websites for gamers and chemical engineer students that quickly solves a popular problem,
-        worked on a prediction model with Drexel University's Chemical Engineer Department,
-        and I am currently planning my next application.
+        <p className="project-introduction"
+        >
+        I am currently working in the defense industry, maintaining and building a messaging infrastructure for navy ships. 
+        When I was a student at Drexel University, I led and built a prediction model in Python as part of a research team.
+        In my free time, I have developed websites for gamers and chemical engineer students as tools to quickly and reliably solve common occurring problems.
+
         </p>
         <a href={Resume} target="_blank" rel="noopener noreferrer" className="download-link" download="Resume-DylanAu.pdf" >Download Resume (PDF)</a>
       </div>
