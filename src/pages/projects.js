@@ -15,8 +15,8 @@ function Projects() {
         <p className="project-introduction"
         >
         I am currently working in the defense industry, maintaining and building a messaging infrastructure for navy ships. 
-        When I was a student at Drexel University, I led and built a prediction model in Python as part of a research team.
-        In my free time, I have developed websites for gamers and chemical engineer students as tools to quickly and reliably solve common occurring problems.
+        I led and built a prediction model in Python as part of a research team at Drexel University.
+        In my free time, I have developed websites and apps to quickly and reliably solve common occurring problems.
 
         </p>
         <a href={Resume} target="_blank" rel="noopener noreferrer" className="download-link" download="Resume-DylanAu.pdf" >Download Resume (PDF)</a>

@@ -1,12 +1,10 @@
 .topbar {
-    height: 66.3125px; /* Full-height: remove this if you want "auto" height */
-    width: 100%; /* Set the width of the sidebar */
+    width: 100vw; /* Set the width of the sidebar */
     position: sticky; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
-    left: 0;
     background-color: rgb(255,255,255); /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /* Disable horizontal scroll */
     border-bottom: solid black;
     border-bottom-width:1px;
 }
