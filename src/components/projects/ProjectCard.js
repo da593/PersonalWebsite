@@ -32,7 +32,7 @@ function ProjectCard(props) {
                     <p className="project-card-company-popup">{props.company}</p>
                         <p className="project-card-title-popup">{props.title}</p>
                         <p className="project-card-description-popup">{props.description}</p>
-                        <a href={props.link} target="_blank" rel="noopener noreferrer" className="project-link">Link to Demonstration</a>
+                        <a href={props.link} target="_blank" rel="noopener noreferrer" className="project-link">Link to Demonstration </a>
                     </div>
                     <div className="project-card-skills-popup">
                         {props.skills.map((child,index) => (<div className="skill" key={index}>{child}</div>))}                       

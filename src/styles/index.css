@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: CircularStd,sans-serif;
@@ -15,7 +16,7 @@ body {
   --tableSearchColor:36,150,237;
   --tableHeaderColor:61, 165, 245;
   --tableRowColor: 233,235,238;
-
+ 
 }
 
 
@@ -405,11 +406,8 @@ h3 {
 }
 
 
-
-
 html,h1 {
   scroll-margin-top:75px;
-  overflow-x: hidden;
 }
 
 /* Safari-only */

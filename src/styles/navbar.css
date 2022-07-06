@@ -1,5 +1,5 @@
 .topbar {
-    width: 100vw; /* Set the width of the sidebar */
+    width: 100%; /* Set the width of the sidebar */
     position: sticky; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -22,6 +22,10 @@
 
 .navbar-justify-right {
     float:right;   
+}
+
+.hamburger-menu {
+    float: left;
 }
 
 .navbar-list {
