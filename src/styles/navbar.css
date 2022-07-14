@@ -1,78 +1,92 @@
-.topbar {
+
+nav {
     width: 100%; /* Set the width of the sidebar */
-    position: sticky; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     background-color: rgb(255,255,255); /* Black */
     overflow-y: hidden; /* Disable horizontal scroll */
+    font-size: 1rem;
+    position: sticky;
     border-bottom: solid black;
     border-bottom-width:1px;
 }
 
-.navbar {
-    height:100%;
-    margin-left:22%;
-    margin-right:22%;
-    
-}
-
-.navbar-justify-left {
-    float:left;
-}
-
-.navbar-justify-right {
-    float:right;   
-}
-
-.hamburger-menu {
-    float: left;
-}
-
-.navbar-list {
-    display:flex;
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.navbar-item {
-    display: inline;
-    padding-right:35px;
-    
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
 }
 
-.profilePicContainer {
-    float:left;
-    width: 65px;
-    height: 65px;
-    border-radius: 60px;
+.flex-right {
+    justify-content: flex-end;
+    padding-right: 2em;
 }
 
 
 .profilePic {
-    width: 65px;
-    height: 65px;
-    border-radius: 60px;
+    width: 4em;
+    height: 4em;
+    border-radius: 4em;
     
 }
 
-.name {
-    font-size: 18.667px;
+.name, .nav-item {
+    font-size: 1.2em;
     font-weight:700;
-    line-height:0%;
-    padding-left:10px;
 }
 
-.spacer {
-    height:66.3125px;
+.nav-item {
+    width: 100%;
+    text-align: center;
+    padding-right: 1em;
 }
 
-.toggle-light-mode {
-    display:flex;
+.break {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
 }
 
-/*Change style of icons used in toggle button*/
-.icon {
-    font-size:20px;
-    color:rgb(var(--lightBackgroundColor));
-    margin-left:5px;
-    margin-right:5px;
+
+
+@media screen and (max-width: 800px) {
+    nav {
+        position: relative;
+        border-bottom-width: 0px;
+    }
+    .border { 
+        border-bottom: solid black;
+        border-bottom-width:1px;
+        width: 100%;
+    }
+
+    .break {
+        display: block;
+        flex-basis: 100%;
+        transition: all 0.5s ease-in-out;
+        height: 100vh;
+    }
+
+    .nav-item {
+        margin: 2% 0;
+        
+    }
 }
+
+@media screen and (max-width: 1400px) {
+    .content-wrapper {
+        margin: auto;
+    }
+}
+
+
+

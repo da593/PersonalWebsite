@@ -9,10 +9,10 @@ function Projects() {
     return (
     <div className="content-wrapper">
       <div className="introduction-section">
-        <h1>
+        <h1 className="introduction-name">
           Hey, I'm Dylan Au <br/>A Software Engineer from Philly
         </h1>
-        <p className="project-introduction"
+        <p className="introduction-background"
         >
         I am currently working in the defense industry, maintaining and building a messaging infrastructure for navy ships. 
         I led and built a prediction model in Python as part of a research team at Drexel University.

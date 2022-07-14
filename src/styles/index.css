@@ -1,5 +1,13 @@
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+}
+
+
 body {
+  background-color: rgb(245,245,245);
   margin: 0;
   font-family: CircularStd,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,55 +43,26 @@ body.dark {
   --tableRowColor: 15,30,39;
 }
 
-code {
-  font-family: CircularStd,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 
 
-button {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  font-size:18px;
-  padding: 5px 5px;
-}
 
-
-button:hover {
-  box-shadow: inset 0 0 50% 50% rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-  background-color:grey;
-  padding: 5px 5px;
-}
-.download-link,.project-link {
+.download-link {
   text-decoration:underline;
   color:#0066CC !important;
   padding:0px 0px;
   
 }
 
-.download-link:hover,.project-link:hover {
+.download-link:hover {
   border-radius: 0px;
   background-color:white;
   padding: 0px 0px;
 }
 
 a {
-  padding: 5px 5px;
   font-weight:700;
-  font-size:18px;
   text-decoration:none;
-}
-
-a:hover {
-  border-radius: 50px;
-  background-color:#d6ebfd;
-  padding: 5px 5px;
 }
 
 a:visited {
@@ -91,10 +70,17 @@ a:visited {
   color:black;
 }
 
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
 .current-page {
   display: inline-block;
   position: relative;
-  padding-bottom: 3px;
   
 }
 
@@ -119,22 +105,30 @@ a:visited {
 }
 
 .content-wrapper {
-  margin-left:22%;
-  margin-right:22%;
-  margin-bottom:2%;
+  display: flex;
+  flex-direction: column; /*align child elements in a column*/
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  row-gap: 15vh;
 }
+
 
 .introduction-section {
-  margin-top:15%;
-  margin-right:45%;
-  margin-bottom:15%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 45%;
+
+  font-size: 1em;
 }
 
-.project-introduction {
+.introduction-background {
   font-size: 1.2em;
   font-weight: 300;
-  margin-bottom:5%;
-  margin-top:5%;
+
 }
 
 #project-header {
@@ -415,5 +409,37 @@ html,h1 {
   .section-wrapper {
       padding-top: 75px;
       margin-top:  75px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+
+
+  .introduction-name {
+    font-size: 1.4em; 
+  }
+
+  .introduction-background {
+    font-size: 1.1em;
+  }
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .grid-system {
+    grid-template-columns: 360px;
+  }
+
+  .project-card {
+    width: 360px;
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .introduction-section {
+    margin-right: 20%;
   }
 }

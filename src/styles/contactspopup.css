@@ -61,7 +61,7 @@
     font-family:"Roboto",sans-serif;
     font-weight:bold;
     padding-top:25px;
-    
+    display: block;
 }
 
 .popup-links > ul > li > a{ 
@@ -79,7 +79,7 @@
 }
 
 #contact-button {
-    color:black;
+    background-color: white;
     font-weight:bold;
     text-decoration:none;
     border-style:solid;
@@ -99,8 +99,6 @@
     background-color:white;
 }
 
-#copy-email {
-    font-weight:500;
-}
+
 
 
