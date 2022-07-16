@@ -4,6 +4,7 @@ import BinaryProject from "../components/projects/BinaryProject";
 import PortfolioProject from "../components/projects/PortfolioProject";
 import FlappyProject from "../components/projects/FlappyProject";
 import Resume from '../images/Resume-DylanAu.pdf';
+import ASRC from "../components/projects/ASRC";
 
 function Projects() {
     return (
@@ -24,6 +25,7 @@ function Projects() {
       <div className="projects-section">
           <h2 id="project-header">Featured Work</h2>
           <div className="grid-system">
+            <ASRC/>
             <div>
               <BDOProject/>
             </div>

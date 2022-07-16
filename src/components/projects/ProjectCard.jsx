@@ -11,12 +11,9 @@ function ProjectCard(props) {
     return (
     <>
         <div className="project-card" onClick={() => setVisibility(true)}>
+            <img className="project-image" src={props.picture} alt="BDO Tracker Site"/>
 
-            <div className="image-container">
-                <img className="card-image" src={props.picture} alt="BDO Tracker Site"/>
-            </div>
-
-            <div className="project-card-overlay">
+            <div className="project-description">
                 <p className="project-card-company">{props.company}</p>
                 <p className="project-card-title">{props.title}</p>
             </div>
@@ -32,7 +29,7 @@ function ProjectCard(props) {
                     <p className="project-card-company-popup">{props.company}</p>
                         <p className="project-card-title-popup">{props.title}</p>
                         <p className="project-card-description-popup">{props.description}</p>
-                        <a href={props.link} target="_blank" rel="noopener noreferrer" className="project-link">Link to Demonstration </a>
+                        {props.link ? <a href={props.link} target="_blank" rel="noopener noreferrer" className="project-link">Link to Demonstration </a> : null}
                     </div>
                     <div className="project-card-skills-popup">
                         {props.skills.map((child,index) => (<div className="skill" key={index}>{child}</div>))}                       

@@ -15,6 +15,8 @@ const NavBar = () => {
         
     }
 
+    const managePopup = () => setPopup(!openPopup);
+
     return (
         
         <nav>

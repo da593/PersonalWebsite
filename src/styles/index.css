@@ -125,15 +125,23 @@ img {
   font-size: 1em;
 }
 
+.introduction-name {
+  background-image: linear-gradient(90deg, rgb(236, 0, 140), rgb(0, 112, 243)); /*Set background color as gradient*/
+  -webkit-background-clip: text; /*The background is painted within (clipped to) the foreground text.*/
+  color: transparent; /*text color is hidden so background is then*/
+}
+
 .introduction-background {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 300;
+  
 
 }
 
 #project-header {
   text-align:center;
-  font-size:29px;
+  font-size:2em;
+  margin-bottom: 1%;
 }
 
 p {
@@ -142,56 +150,41 @@ p {
 
 .grid-system {
   display:grid;
-  grid-template-columns: 540px 540px;
-  column-gap:15px;
-  row-gap:15px;
+  grid-template-columns: 30vw 30vh;
+ 
+  row-gap:5%;
 }
 
 .project-card {
-  width:540px;
-  height:425px;
-  background-color:rgb(205,205,205);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  
   position:relative;
   cursor:pointer;
 }
 
 
-.image-container {
-  width:378px;
-  height:236.25px;
-  object-fit: contain;
-  position:absolute;
-  
-  padding-left:15%;
-  padding-top:18%;
+.project-image {
+  width: 360px;
+  height: 240px;
 }
 
-.card-image {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+.project-description {
+  color: black;
+  background-color: white;
   height:100%;
-  
 }
 
-.project-card-overlay {
-  position:absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color:#0066CC;
+.project-card {
+
 }
 
-.project-card:hover .project-card-overlay {
-  opacity: 0.5;
+.project-card:hover {
+  opacity: 0.9;
 }
 
-.project-card-company,.project-card-title {
-  color:white;
-  padding-left:10%;
-  
-}
+
 
 .project-card-company {
   font-size: 18px;
@@ -421,7 +414,7 @@ html,h1 {
   }
 
   .introduction-background {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
 
