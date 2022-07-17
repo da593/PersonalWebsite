@@ -8,14 +8,7 @@ import {BsBorderWidth,BsXLg} from 'react-icons/bs'
 const NavBar = () => {   
     const isDesktop = useMediaQuery({ minWidth: 801 } );
     const [openMenu,setMenu] = useState(false);
-    const [openPopup,setPopup] = useState(false);
-    
-    const closePopup = () => {
-        setPopup(false);
-        
-    }
 
-    const managePopup = () => setPopup(!openPopup);
 
     return (
         
@@ -33,10 +26,10 @@ const NavBar = () => {
                 <div className="break" style= {{visibility: isDesktop || openMenu ? "visible" :"hidden" ,opacity: isDesktop || openMenu ? "1" : "0", maxHeight: isDesktop || openMenu ? "15%" : "0px"}}>
                     <li className="nav-item"> <NavLink exact to="/" activeClassName="current-page">Projects</NavLink> </li>
                     <li className="nav-item"> <NavLink exact to="/about" activeClassName="current-page">About Me</NavLink> </li>
-                    <li className="nav-item"> <button id="contact-button" onClick={() => setPopup(true)}>Contact Me</button> </li>
+                    <li className="nav-item"> <Popup/> </li>
                 </div>
             </ul>
-            <Popup openPopup={openPopup} closePopup={closePopup}/>
+            
         </nav>
         
         );

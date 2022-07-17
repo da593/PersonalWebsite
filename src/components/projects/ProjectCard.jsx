@@ -11,7 +11,7 @@ function ProjectCard(props) {
     return (
     <>
         <div className="project-card" onClick={() => setVisibility(true)}>
-            <img className="project-image" src={props.picture} alt="Picture"/>
+            <img className="project-image" src={props.picture} alt="Failed to load image" aria-hidden="true"/>
 
             <div className="project-description">
                 <p className="project-card-company">{props.company}</p>
@@ -22,7 +22,7 @@ function ProjectCard(props) {
             <div className="project-card-popup">
                     <button className="close-button" style={{float: "right"}} onClick={() => closePopup()}><BsFillXCircleFill /></button>
                     <div className="image-container-popup">
-                        <img className="card-image-popup" src={props.picture} alt="Picture"/>
+                        <img className="card-image-popup" src={props.picture} alt="Failed to load image" aria-hidden="true"/>
                     </div>
 
                     <div className="project-card-overlay-popup">
