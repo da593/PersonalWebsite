@@ -9,14 +9,14 @@ import {
   Route,
 } from "react-router-dom";
 
-import TopBar from './components/TopBar';
+import NavBar from './components/NavBar';
 import Projects from './pages/projects';
 import About from './pages/aboutme';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <TopBar/>
+      <NavBar/>
         <Switch>
             <Route exact path='/'><Projects/></Route> 
             <Route exact path='/about'><About/></Route>

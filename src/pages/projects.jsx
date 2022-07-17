@@ -1,18 +1,16 @@
 import React from "react";
-import BDOProject from "../components/projects/BDOProject";
-import BinaryProject from "../components/projects/BinaryProject";
-import PortfolioProject from "../components/projects/PortfolioProject";
-import FlappyProject from "../components/projects/FlappyProject";
 import Resume from '../images/Resume-DylanAu.pdf';
+import data from '../components/projects/data';
+import ProjectCard from '../components/projects/ProjectCard';
 
 function Projects() {
     return (
     <div className="content-wrapper">
       <div className="introduction-section">
-        <h1>
+        <h1 className="introduction-name">
           Hey, I'm Dylan Au <br/>A Software Engineer from Philly
         </h1>
-        <p className="project-introduction"
+        <p className="introduction-background"
         >
         I am currently working in the defense industry, maintaining and building a messaging infrastructure for navy ships. 
         I led and built a prediction model in Python as part of a research team at Drexel University.
@@ -24,20 +22,12 @@ function Projects() {
       <div className="projects-section">
           <h2 id="project-header">Featured Work</h2>
           <div className="grid-system">
-            <div>
-              <BDOProject/>
-            </div>
-            <div>
-              <BinaryProject/>
-            </div>
-            <div>
-              <PortfolioProject/>
-            </div>
-            <div>
-              <FlappyProject/>
-            </div>
+            {data.map((project) => {
+              return (
+                <ProjectCard {...project}/>
+              )
+            })}
           </div>
-         
       </div>
     </div>
       

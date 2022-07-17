@@ -11,12 +11,9 @@ function ProjectCard(props) {
     return (
     <>
         <div className="project-card" onClick={() => setVisibility(true)}>
+            <img className="project-image" src={props.picture} alt="Picture"/>
 
-            <div className="image-container">
-                <img className="card-image" src={props.picture} alt="BDO Tracker Site"/>
-            </div>
-
-            <div className="project-card-overlay">
+            <div className="project-description">
                 <p className="project-card-company">{props.company}</p>
                 <p className="project-card-title">{props.title}</p>
             </div>
@@ -25,14 +22,14 @@ function ProjectCard(props) {
             <div className="project-card-popup">
                     <button className="close-button" style={{float: "right"}} onClick={() => closePopup()}><BsFillXCircleFill /></button>
                     <div className="image-container-popup">
-                        <img className="card-image-popup" src={props.picture} alt="BDO Tracker Site"/>
+                        <img className="card-image-popup" src={props.picture} alt="Picture"/>
                     </div>
 
                     <div className="project-card-overlay-popup">
                     <p className="project-card-company-popup">{props.company}</p>
                         <p className="project-card-title-popup">{props.title}</p>
                         <p className="project-card-description-popup">{props.description}</p>
-                        <a href={props.link} target="_blank" rel="noopener noreferrer" className="project-link">Link to Demonstration</a>
+                        {props.link ? <a href={props.link} target="_blank" rel="noopener noreferrer" className="project-link">Link to Demonstration </a> : null}
                     </div>
                     <div className="project-card-skills-popup">
                         {props.skills.map((child,index) => (<div className="skill" key={index}>{child}</div>))}                       
