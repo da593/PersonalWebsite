@@ -1,10 +1,8 @@
 
 nav {
     width: 100%; /* Set the width of the sidebar */
-    z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     background-color: rgb(255,255,255); /* Black */
-    overflow-y: hidden; /* Disable horizontal scroll */
     font-size: 1rem;
     position: sticky;
     border-bottom: solid black;

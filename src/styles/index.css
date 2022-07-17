@@ -119,9 +119,8 @@ img {
   flex-direction: column;
   row-gap: 5vh;
   margin-top: 5%;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-right: 45%;
-
   font-size: 1em;
 }
 
@@ -150,9 +149,9 @@ p {
 
 .grid-system {
   display:grid;
-  grid-template-columns: 30vw 30vh;
- 
+  grid-template-columns: auto auto;
   row-gap:5%;
+  column-gap: 5%;
 }
 
 .project-card {
@@ -164,27 +163,19 @@ p {
   cursor:pointer;
 }
 
+.project-card:hover {
+  opacity: 0.9;
+}
 
 .project-image {
-  width: 360px;
-  height: 240px;
+  width: 480px;
+  height: 280px;
 }
 
 .project-description {
   color: black;
   background-color: white;
-  height:100%;
 }
-
-.project-card {
-
-}
-
-.project-card:hover {
-  opacity: 0.9;
-}
-
-
 
 .project-card-company {
   font-size: 18px;
@@ -405,9 +396,7 @@ html,h1 {
   }
 }
 
-@media screen and (max-width: 400px) {
-
-
+@media screen and (max-width: 460px) {
 
   .introduction-name {
     font-size: 1.4em; 
@@ -420,18 +409,21 @@ html,h1 {
 
 }
 
-@media screen and (max-width: 800px) {
-  .grid-system {
-    grid-template-columns: 360px;
-  }
+@media screen and (max-width: 480px) {
 
-  .project-card {
+  .project-image {
     width: 360px;
-    height: 240px;
+    height: 280px;
   }
-}
+} 
 
 @media screen and (max-width: 1200px) {
+  .grid-system {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 5%;
+  }
+
   .introduction-section {
     margin-right: 20%;
   }

@@ -23,8 +23,8 @@ const NavBar = () => {
             <ul className="menu">
                 <div className="border flex">
                     <div className="flex">
-                        <li><img className="profilePic" src={profilePic} alt="Profile Pic"/></li>
-                        <li><p className="name">Dylan Au</p></li>
+                        <li><NavLink exact to="/"><img className="profilePic" src={profilePic} alt="Profile Pic"/></NavLink></li>
+                        <li><NavLink  exact to="/" className="name">Dylan Au</NavLink></li>
                     </div>
                     <div className="flex-right">
                         <li><button className="hamburger-icon" style= {{ visibility: isDesktop ? "hidden" : "visible"}} onClick={() => setMenu(!openMenu)}>{openMenu ? <BsXLg/> : <BsBorderWidth/>}</button></li>
