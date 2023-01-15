@@ -1,7 +1,8 @@
 import React from "react";
-import Resume from '../images/Resume-DylanAu.pdf';
-import data from '../components/projects/data';
+import data from '../components/projects/data.json';
 import ProjectCard from '../components/projects/ProjectCard';
+
+const resumeSrc = "images/Resume_DylanAu.pdf"
 
 function Projects() {
     return (
@@ -17,7 +18,7 @@ function Projects() {
         In my free time, I have developed websites and apps to quickly and reliably solve common occurring problems.
 
         </p>
-        <a href={Resume} target="_blank" rel="noopener noreferrer" className="download-link" download="Resume-DylanAu.pdf" >Download Resume (PDF)</a>
+        <a href={resumeSrc} target="_blank" rel="noopener noreferrer" className="download-link" download="Resume_DylanAu.pdf" >Download Resume (PDF)</a>
       </div>
       <div className="projects-section">
           <h2 id="project-header">Featured Work</h2>
@@ -31,7 +32,7 @@ function Projects() {
       </div>
     </div>
       
-    );
+    )
   }
   
 export default Projects;

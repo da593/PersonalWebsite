@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
+import './styles/contactpage.css';
 import './styles/navbar.css';
-import './styles/contactspopup.css';
 import {
   BrowserRouter,
   Switch,
@@ -11,7 +11,7 @@ import {
 
 import NavBar from './components/NavBar';
 import Projects from './pages/projects';
-import About from './pages/aboutme';
+import ContactForm from './pages/ContactForm';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +19,7 @@ ReactDOM.render(
       <NavBar/>
         <Switch>
             <Route exact path='/'><Projects/></Route> 
-            <Route exact path='/about'><About/></Route>
+            <Route exact path='/ContactForm'><ContactForm/></Route>
         </Switch>
     </BrowserRouter>
     

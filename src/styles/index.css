@@ -48,61 +48,41 @@ body.dark {
 
 
 .download-link {
+  font-size: 1.2em;
   text-decoration:underline;
-  color:#0066CC !important;
   padding:0px 0px;
   
 }
 
 .download-link:hover {
   border-radius: 0px;
-  background-color:white;
   padding: 0px 0px;
 }
 
 a {
   font-weight:700;
   text-decoration:none;
+
 }
 
 a:visited {
   text-decoration:none;
-  color:black;
+  color: inherit;
+
 }
 
 li {
   list-style-type: none;
 }
 
+li:hover {
+  cursor:pointer;
+}
+
 img {
   width: 100%;
 }
 
-.current-page {
-  display: inline-block;
-  position: relative;
-  
-}
-
-@keyframes border {
-  from {width: 0%;}
-  to {width:100%}
-}
-
-.current-page::after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0px;
-  background: black;  
-  animation-name: border; 
-  animation-duration: 4s; 
-  animation-fill-mode: forwards; 
-  animation-name: border;
-  animation-duration: 0.5s;
-  
-}
 
 .content-wrapper {
   display: flex;
@@ -124,11 +104,7 @@ img {
   font-size: 1em;
 }
 
-.introduction-name {
-  background-image: linear-gradient(90deg, rgb(236, 0, 140), rgb(0, 112, 243)); /*Set background color as gradient*/
-  -webkit-background-clip: text; /*The background is painted within (clipped to) the foreground text.*/
-  color: transparent; /*text color is hidden so background is then*/
-}
+
 
 .introduction-background {
   font-size: 1.3em;
@@ -137,10 +113,13 @@ img {
 
 }
 
+
+
 #project-header {
   text-align:center;
   font-size:2em;
   margin-bottom: 1%;
+
 }
 
 p {
@@ -150,8 +129,8 @@ p {
 .grid-system {
   display:grid;
   grid-template-columns: auto auto;
-  row-gap:5%;
-  column-gap: 5%;
+  gap: 3em 3em;
+  margin-bottom: 3em;
 }
 
 .project-card {
@@ -191,75 +170,94 @@ p {
 .popup-containers {
   display: none;
   flex-direction: column;
-  z-index:1;
-  position:fixed;
-
-
-  align-items:center;
-  padding-top:3%;
   
-  width:100%;
-  height:100%;
+  /*Make div center and above all, background color darkened */
+  position:fixed; 
+  z-index:1;
   background-color:rgb(0,0,0,0.4);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  
+
+  align-items:center;
+  padding-top:4%;
 }
 
 .project-card-popup {
-  width:50%;
-  height:80%;
-  background-color:white;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  height: 80%;
+ 
 
 }
-
-.image-container-popup {
-  text-align:center;
-  padding-top:3%;
-  padding-bottom:3%;
-  height:50%;
-  background-color:rgb(205,205,205);
-}
-
 
 .card-image-popup {
-  width: 50%;
-  height:100%;
+  width: 100%;
+  height: 50%;
 }
 
 .project-card-overlay-popup {
-  margin-left:5%;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.project-card-company-popup,.project-card-title-popup,.project-card-description-popup {
-  color:black;
+.project-card-overlay-popup, .project-card-skills-popup {
+  background-color: white;
+}
 
-  flex:1;
+.project-card-overlay-popup, .project-card-skills-popup {
+  padding-left:5%;
+  padding-top: 3%;
+}
+
+.project-card-skills-popup {
+  padding-bottom: 3%;
 }
 
 .project-card-company-popup {
   font-size: 18px;
-  font-weight:500;
-  margin:0;
-  padding-top:3%;
-
+  font-weight:800;
 }
 
 .project-card-title-popup {
   font-size: 27px;
   font-weight:800;
-  margin:0;
 }
 
 .project-card-description-popup {
+  font-size: 18px;
   padding-right:5%;
 }
 
-.project-card-skills-popup {
-  margin-left:5%;
-  margin-top:3%;
+.project-card-description-popup, .project-link {
+  margin-top:2%;
+}
+
+.project-link, .project-link:visited, .download-link, .download-link:visited {
+  color: #0066CC;
+}
+
+
+.close-button {
+  padding: 0 0;
+  margin: 0 0;
+  max-height: 18px;
+  float: right;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  color: black;
+
+}
+
+.close-button:hover {
+  color: red;
+  cursor: pointer;
 }
 
 .skill {
@@ -272,11 +270,6 @@ p {
   font-size:17px;
   font-weight:600;
   cursor:default;
-}
-
-#clever-text{
-  font-size:12px;
-  font-weight:600;
 }
 
 .section-wrapper{
@@ -292,6 +285,7 @@ p {
   margin-left:15%;
   margin-right:15%;
 }
+
 .section-header {
   font-family:"Helvetica","sans-serif";
   margin:0;
@@ -351,39 +345,7 @@ h3 {
   
 }
 
-.TableOfContents {
-  position: fixed;
-  z-index:1;
-  margin-left:0%;
-  margin-top:10%;
-  max-height: calc(100vh - 40px);
-  overflow:auto;
-  background-color:#1F2233;
-  
-  width:7%;
-}
-.TableOfContents > ul {
-  color:white;
-  padding-left:20px;
-  
-}
-.TableOfContents > ul > li > a {
-  color:white;
-  font-size:12px;
-  font-family:"Helvetica";
-  
-}
 
-.TableOfContents > ul > li.active > a {
-  color: yellow;
-}
-
-.TableOfContents > ul > li > a:hover {
-  background-color:#1F2233;
-  border-radius:0px;
-  color:yellow;
-  
-}
 
 
 html,h1 {
@@ -415,18 +377,24 @@ html,h1 {
 
   .project-image {
     width: 360px;
-    height: 280px;
+  
   }
 } 
+
 
 @media screen and (max-width: 1200px) {
   .grid-system {
     display: grid;
     grid-template-columns: auto;
-    row-gap: 5%;
+    gap: 3em;
+    margin-bottom: 3em;
   }
 
   .introduction-section {
     margin-right: 20%;
+  }
+
+  .project-card-popup {
+    width: 80%;
   }
 }
