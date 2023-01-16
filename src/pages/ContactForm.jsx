@@ -7,8 +7,12 @@ function ContactForm() {
     const onSubmit = () => validSubmission();
 
     function validSubmission() {
-        alert("Thank you, I will respond as soon as possible!");
-        window.location.reload(true);
+        if (process.env.NODE_ENV !== "production") {
+            console.log(process.env.NODE_ENV)
+            alert("Thank you, I will respond as soon as possible!");
+            window.location.reload(true);
+        } 
+
     }
 
     return (
