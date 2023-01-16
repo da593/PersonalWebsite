@@ -11,16 +11,15 @@ function ContactForm() {
             .join("&");
       }
 
-    const validSubmission = e =>  {
+    const validSubmission = (data,e) =>  {
+        console.log(data,e);
         if (process.env.NODE_ENV !== "production") {
-            console.log(process.env.NODE_ENV)
             alert("Thank you, I will respond as soon as possible!");
-            window.location.reload(true);
         } else {
             fetch("/", {
                 method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encode({ "form-name": "contact", ...this.state })
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
               })
                 .then(() => alert("Success!"))
                 .catch(error => alert(error));
@@ -42,7 +41,7 @@ function ContactForm() {
                     <div className="input-grid">
                         <p className="mark-red" style={errors.name ? {visibility: "visible"} : {visibility:"hidden"}}>{errors.name && errors.name.message}</p>
                         <label>Name<span className="mark-red">*</span></label>
-                        <input type="text" name="name" className="label-input"  {...register("name",{
+                        <input type="text" className="label-input" name="name" {...register("name",{
                             required: "A name is required",
                             minLength: {
                                 value: 3,
@@ -57,7 +56,7 @@ function ContactForm() {
                     <div className="input-grid">
                         <p className="mark-red" >{ errors.email && errors.email.message}</p>
                         <label>Email<span className="mark-red">*</span></label>
-                        <input type="text" name="email" className="label-input" {...register("email", {
+                        <input type="text" className="label-input" name="email" {...register("email", {
                             required: "An email is required",
                             pattern: {
                                 value: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
@@ -67,11 +66,11 @@ function ContactForm() {
                     </div>
                     <div className="input-grid">
                         <label>Company</label>
-                        <input type="text" name="company" className="label-input"/>
+                        <input type="text" className="label-input" name="company" {...register("company")}/>
                     </div>
                     <div className="input-grid">
                         <label>Job title</label>
-                        <input type="text" name="job" className="label-input"/>
+                        <input type="text" className="label-input" name="job" {...register("job")}/>
                     </div>
                 </div>
                 <div>
