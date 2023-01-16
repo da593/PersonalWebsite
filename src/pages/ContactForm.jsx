@@ -5,12 +5,28 @@ function ContactForm() {
 
     const {register, handleSubmit,formState:{errors}} = useForm();
 
-    const validSubmission = (values) =>  {
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+      }
+
+    const validSubmission = e =>  {
         if (process.env.NODE_ENV !== "production") {
             console.log(process.env.NODE_ENV)
             alert("Thank you, I will respond as soon as possible!");
             window.location.reload(true);
-        } 
+        } else {
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...this.state })
+              })
+                .then(() => alert("Success!"))
+                .catch(error => alert(error));
+        
+              e.preventDefault();
+        }
     }
 
     return (
@@ -19,7 +35,7 @@ function ContactForm() {
                 <h1>What interests you?</h1>
                 <p>Tell me about yourself, your reason, and availability and I will respond as as soon as possible!</p>
             </div>
-            <form className="form-section" onSubmit={handleSubmit(validSubmission)} name="contact" method="POST" data-netlify="true">
+            <form className="form-section" onSubmit={handleSubmit(validSubmission)} name="contact">
                 <input type="hidden" name="form-name" value="contact" />
                 <p>Complete the form below to reach out to me.</p>
                 <div className="form-grid">
