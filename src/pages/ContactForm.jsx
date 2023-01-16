@@ -18,7 +18,7 @@ function ContactForm() {
             fetch("/", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encode(data)
+                body: encode({"form-name":"contact",...data})
               })
                 .then(() => alert("Success!"))
                 .catch(error => alert(error));
