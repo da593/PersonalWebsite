@@ -28,7 +28,7 @@ function ContactForm() {
                 <h1>What interests you?</h1>
                 <p>Tell me about yourself, your reason, and availability and I will respond as as soon as possible!</p>
             </div>
-            <form className="form-section" onSubmit={handleSubmit(validSubmission)} name="contact">
+            <form className="form-section" onSubmit={handleSubmit(validSubmission)} name="contact" method="post">
                 <input type="hidden" name="form-name" value="contact" />
                 <p>Complete the form below to reach out to me.</p>
                 <div className="form-grid">
