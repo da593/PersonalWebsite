@@ -5,15 +5,20 @@ function ContactForm() {
 
     const {register, handleSubmit,formState:{errors}} = useForm();
 
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+      }
+
     const validSubmission = (data,e) =>  {
-        console.log(data,e);
         if (process.env.NODE_ENV !== "production") {
             alert("Thank you, I will respond as soon as possible!");
         } else {
             fetch("/", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(data)
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode(data)
               })
                 .then(() => alert("Success!"))
                 .catch(error => alert(error));
