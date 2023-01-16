@@ -4,15 +4,13 @@ import {useForm} from 'react-hook-form'
 function ContactForm() {
 
     const {register, handleSubmit,formState:{errors}} = useForm();
-    const onSubmit = () => validSubmission();
 
-    function validSubmission() {
+    const validSubmission = (values) =>  {
         if (process.env.NODE_ENV !== "production") {
             console.log(process.env.NODE_ENV)
             alert("Thank you, I will respond as soon as possible!");
             window.location.reload(true);
         } 
-
     }
 
     return (
@@ -21,7 +19,8 @@ function ContactForm() {
                 <h1>What interests you?</h1>
                 <p>Tell me about yourself, your reason, and availability and I will respond as as soon as possible!</p>
             </div>
-            <form className="form-section" onSubmit={handleSubmit(onSubmit)} name="contact" method="POST" data-netlify="true">
+            <form className="form-section" onSubmit={handleSubmit(validSubmission)} name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                 <p>Complete the form below to reach out to me.</p>
                 <div className="form-grid">
                     <div className="input-grid">
