@@ -2,7 +2,7 @@ import React from "react";
 import data from '../components/projects/data.json';
 import ProjectCard from '../components/projects/ProjectCard';
 
-const resumeSrc = "images/Resume_DylanAu.pdf"
+const resumeSrc = "https://drive.google.com/file/d/1Wmas2vGa6x5dDfdT6UyKsuUcDE7eGqNq/view?usp=drive_link"
 
 function Projects() {
     return (
@@ -18,7 +18,7 @@ function Projects() {
         In my free time, I have developed websites and apps to quickly and reliably solve common occurring problems.
 
         </p>
-        <a href={resumeSrc} target="_blank" rel="noopener noreferrer" className="download-link" download="Resume_DylanAu.pdf" >Download Resume (PDF)</a>
+        <a href={resumeSrc} target="_blank" rel="noopener noreferrer" className="download-link">View Resume (Google Drive) (PDF)</a>
       </div>
       <div className="projects-section">
           <h2 id="project-header">Featured Work</h2>
