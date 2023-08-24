@@ -18,7 +18,7 @@ function Projects() {
         In my free time, I have developed websites and apps to quickly and reliably solve common occurring problems.
 
         </p>
-        <a href={resumeSrc} target="_blank" rel="noopener noreferrer" className="download-link">View Resume (Google Drive) (PDF)</a>
+        <a href={resumeSrc} target="_blank" rel="noopener noreferrer" className="download-link">View Resume PDF (Google Drive)</a>
       </div>
       <div className="projects-section">
           <h2 id="project-header">Featured Work</h2>
