@@ -7,6 +7,14 @@
         "skills": ["C++", "git", "Clearcase", "Jira", "Bitbucket", "Maven", "Unix"]
     },
     {
+        "company": "Multiplayer Game",
+        "title": "Flappybird",
+        "description": "Created an online server-authoritative multiplayer game of Flappybird using sockets, allowing players to play against an opponent to see who can fly the furthest!",
+        "picture": "images/FlappyProject.jpg",
+        "link": "https://multiplayer-flappybird.vercel.app/",
+        "skills": ["Javascript", "React", "Node.js", "Next.js", "socket.io", "HTML", "CSS"]
+    }
+    {
         "company": "Black Desert Online",
         "title": "Profit Tracker",
         "description": "This website helps Black Desert Online players calculate profitability of various popular ingame activities to optimize their daily income. It also tracks the history of sales for all microtransactions that is listed on a centralized marketplace to help players determine what players are buying with real money and selling on the ingame market.",
@@ -22,11 +30,4 @@
         "link": "https://da593.github.io/ReactBinary/", 
         "skills": ["JavaScript", "React", "HTML", "CSS"]
     },
-    {
-        "company": "Drexel University",
-        "title": "FlappyBlock",
-        "description": "A group of 3 freshman in an engineering course bring you FlappyBlock! The game features event key actions, score tracker, and high score tracker for multiple played sessions. By leading this team, we finished this project ahead of the 10 week schedule.",
-        "picture": "images/FlappyProject.jpg",
-        "skills": ["MATLAB"]
-    }
 ]
