@@ -13,7 +13,7 @@
         "picture": "images/FlappyProject.jpg",
         "link": "https://multiplayer-flappybird.vercel.app/",
         "skills": ["Javascript", "React", "Node.js", "Next.js", "socket.io", "HTML", "CSS"]
-    }
+    },
     {
         "company": "Black Desert Online",
         "title": "Profit Tracker",
@@ -29,5 +29,5 @@
         "picture": "images/binaryColumn.jpg",
         "link": "https://da593.github.io/ReactBinary/", 
         "skills": ["JavaScript", "React", "HTML", "CSS"]
-    },
+    }
 ]
