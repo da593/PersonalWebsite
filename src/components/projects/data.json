@@ -12,7 +12,7 @@
         "description": "Created an online server-authoritative multiplayer game of Flappybird using sockets, allowing players to play against an opponent to see who can fly the furthest!",
         "picture": "images/FlappyProject.jpg",
         "link": "https://multiplayer-flappybird.vercel.app/",
-        "skills": ["Javascript", "React", "Node.js", "Next.js", "socket.io", "HTML", "CSS"]
+        "skills": ["JavaScript", "React", "Node.js", "Next.js", "TypeScript", "socket.io", "HTML", "CSS"]
     },
     {
         "company": "Black Desert Online",
@@ -21,6 +21,13 @@
         "picture": "images/BDOImage.jpg",
         "link": "https://bdotracker.netlify.app/",
         "skills": ["Python", "Django", "React", "JavaScript", "HTML", "CSS", "MySQL"]
+    },
+    {
+        "company": "Browser Plugin",
+        "title": "Youtube No Disturbance",
+        "description": "An extension to automatically skip (skippable) ads, mute ads, and block \"Continue Watching\" popup on YouTube. Supported for Firefox and Chrome",
+        "picture": "images/youtube_icon.png",
+        "skills": ["JavaScript", "TypeScript"]
     },
     {
         "company": "McCabe-Thiele",
