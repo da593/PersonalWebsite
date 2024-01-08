@@ -2,7 +2,7 @@ import React from "react";
 import data from '../components/projects/data.json';
 import ProjectCard from '../components/projects/ProjectCard';
 
-const resumeSrc = "https://drive.google.com/file/d/1pgdaqyHKJZKLa-eKSi3BSRHo6-uXDQyX/view?usp=drive_link"
+const resumeSrc = "https://drive.google.com/file/d/1Pbgt8biCFOTbNv6drRFSkzzkLtXEFvCP/view?usp=drive_link"
 
 function Projects() {
     return (
