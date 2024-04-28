@@ -7,12 +7,12 @@
         "skills": ["C++", "git", "Clearcase", "Jira", "Bitbucket", "Maven", "Unix"]
     },
     {
-        "company": "Multiplayer Game",
-        "title": "Flappybird",
-        "description": "Created an online server-authoritative multiplayer game of Flappybird using sockets, allowing players to play against an opponent to see who can fly the furthest!",
-        "picture": "images/FlappyProject.jpg",
-        "link": "https://multiplayer-flappybird.vercel.app/",
-        "skills": ["JavaScript", "React", "Node.js", "Next.js", "TypeScript", "socket.io", "HTML", "CSS"]
+        "company": "Browser Plugin",
+        "title": "Youtube No Disturbance",
+        "description": "An extension to automatically skip (skippable) ads, mute ads, and block \"Continue Watching\" popup on YouTube. Supported for Firefox browsers",
+        "picture": "images/youtube_icon.png",
+        "link": "https://addons.mozilla.org/en-US/firefox/addon/youtube-no-disturbance/",
+        "skills": ["JavaScript", "TypeScript"]
     },
     {
         "company": "Black Desert Online",
@@ -23,19 +23,11 @@
         "skills": ["Python", "Django", "React", "JavaScript", "HTML", "CSS", "MySQL"]
     },
     {
-        "company": "Browser Plugin",
-        "title": "Youtube No Disturbance",
-        "description": "An extension to automatically skip (skippable) ads, mute ads, and block \"Continue Watching\" popup on YouTube. Supported for Firefox and Chrome",
-        "picture": "images/youtube_icon.png",
-        "link": "https://addons.mozilla.org/en-US/firefox/addon/youtube-no-disturbance/",
-        "skills": ["JavaScript", "TypeScript"]
-    },
-    {
-        "company": "McCabe-Thiele",
-        "title": "Binary Distillation Solver",
-        "description": "This website quickly performs the McCabe-Thiele graphical method to determine the number of stages required for a binary distillation solver. With built-in validation, users will always get their answer and are guided with tooltips and notifications to help solve their problem. ",
-        "picture": "images/binaryColumn.jpg",
-        "link": "https://da593.github.io/ReactBinary/", 
-        "skills": ["JavaScript", "React", "HTML", "CSS"]
+        "company": "Multiplayer Game",
+        "title": "Flappybird",
+        "description": "Created an online server-authoritative multiplayer game of Flappybird using sockets, allowing players to play against an opponent to see who can fly the furthest!",
+        "picture": "images/FlappyProject.jpg",
+        "link": "https://multiplayer-flappybird.vercel.app/",
+        "skills": ["JavaScript", "React", "Node.js", "Next.js", "TypeScript", "socket.io", "HTML", "CSS"]
     }
 ]
